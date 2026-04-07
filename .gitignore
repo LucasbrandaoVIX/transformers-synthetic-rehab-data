@@ -1,0 +1,45 @@
+# Data directories (large files)
+data/kimore/raw/
+data/rehab/new_joint_vecs/
+data/rehab/joints/
+data/rehab/tmp/
+data/rehab/*.npy
+data/synthetic/
+
+# MotionGPT3 large files
+MotionGPT3/checkpoints/
+MotionGPT3/deps/
+MotionGPT3/datasets/
+MotionGPT3/experiments/
+MotionGPT3/results/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Environment
+.env
+*.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+wandb/
+lightning_logs/

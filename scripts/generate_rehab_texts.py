@@ -151,15 +151,110 @@ QUALITY_MODIFIERS = {
 }
 
 
-def tokenize_simple(text: str) -> str:
-    """Simple whitespace tokenization with POS-like tags (simplified)."""
+def tokenize_with_pos(text: str) -> str:
+    """Tokenize text with POS tags matching HumanML3D VIP categories.
+
+    Uses the same VIP (Very Important Pos) categories as the WordVectorizer:
+    - Act_VIP: action verbs (walk, raise, bend, squat, rotate, etc.)
+    - Body_VIP: body parts (arm, shoulder, knee, etc.)
+    - Loc_VIP: directions (left, right, forward, up, down, etc.)
+    - Desc_VIP: descriptors (slowly, carefully, fast, etc.)
+    - VERB, NOUN, DET, ADP, ADJ, ADV, AUX, PRON for standard POS
+    """
+    # VIP word lists (from word_vectorizer.py)
+    act_words = {'walk', 'run', 'swing', 'pick', 'bring', 'kick', 'put', 'squat',
+                 'throw', 'hop', 'dance', 'jump', 'turn', 'stumble', 'stop', 'sit',
+                 'lift', 'lower', 'raise', 'wash', 'stand', 'kneel', 'stroll', 'rub',
+                 'bend', 'balance', 'flap', 'jog', 'shuffle', 'lean', 'rotate', 'spin',
+                 'spread', 'climb',
+                 # Additional rehab-relevant verbs
+                 'flex', 'extend', 'elevate', 'curl', 'twist', 'straighten',
+                 'perform', 'move', 'return', 'maintain', 'keep'}
+    body_words = {'arm', 'arms', 'chin', 'foot', 'feet', 'face', 'hand', 'hands',
+                  'mouth', 'leg', 'legs', 'waist', 'eye', 'knee', 'knees', 'shoulder',
+                  'shoulders', 'thigh', 'thighs',
+                  # Additional rehab body parts
+                  'elbow', 'elbows', 'wrist', 'wrists', 'hip', 'hips', 'pelvis',
+                  'trunk', 'torso', 'spine', 'forearm', 'forearms', 'ankle', 'ankles',
+                  'body', 'back', 'neck', 'head'}
+    loc_words = {'left', 'right', 'clockwise', 'counterclockwise', 'anticlockwise',
+                 'forward', 'back', 'backward', 'up', 'down', 'straight', 'curve',
+                 'laterally', 'sideways', 'upward', 'outward', 'inward'}
+    desc_words = {'slowly', 'carefully', 'fast', 'careful', 'slow', 'quickly', 'happy',
+                  'angry', 'sad', 'happily', 'angrily', 'sadly',
+                  'controlled', 'bilateral', 'alternating', 'partial', 'reduced',
+                  'limited', 'slight', 'minor'}
+
+    # Standard POS word lists (approximate)
+    det_words = {'a', 'an', 'the', 'this', 'that', 'these', 'those', 'both', 'each', 'their'}
+    pron_words = {'person', 'someone', 'they', 'them', 'he', 'she', 'it', 'who'}
+    adp_words = {'in', 'on', 'at', 'to', 'from', 'by', 'with', 'for', 'of', 'as',
+                 'while', 'during', 'through', 'into', 'toward', 'towards', 'against',
+                 'between', 'without', 'until', 'above', 'below'}
+    aux_words = {'is', 'are', 'was', 'were', 'be', 'been', 'being', 'has', 'have', 'had',
+                 'do', 'does', 'did', 'will', 'would', 'shall', 'should', 'may', 'might',
+                 'can', 'could', 'must'}
+    conj_words = {'and', 'or', 'but', 'then', 'while'}
+
+    # Common verb forms (including gerunds and participles relevant to rehab)
+    verb_words = {'raises', 'raising', 'raised', 'performs', 'performing', 'performed',
+                  'lifts', 'lifting', 'lifted', 'lowers', 'lowering', 'lowered',
+                  'bends', 'bending', 'bent', 'flexes', 'flexing', 'flexed',
+                  'extends', 'extending', 'extended', 'rotates', 'rotating', 'rotated',
+                  'twists', 'twisting', 'twisted', 'squats', 'squatting', 'squatted',
+                  'curls', 'curling', 'curled', 'elevates', 'elevating', 'elevated',
+                  'standing', 'sitting', 'seated', 'keeping', 'maintaining', 'held',
+                  'pinned', 'fixed', 'anchored', 'remains', 'remaining', 'returns',
+                  'moves', 'moving', 'targeting', 'strengthening', 'recovering'}
+
+    # Adjective-like words
+    adj_words = {'lateral', 'frontal', 'transversal', 'horizontal', 'upper', 'lower',
+                 'stationary', 'upright', 'clinical', 'rehabilitation', 'therapeutic',
+                 'functional', 'spinal', 'lumbar', 'compensatory', 'rotational'}
+
+    # Noun-like words
+    noun_words = {'elevation', 'flexion', 'extension', 'rotation', 'abduction',
+                  'exercise', 'exercises', 'movement', 'movements', 'motion', 'range',
+                  'amplitude', 'position', 'posture', 'level', 'height', 'side', 'sides',
+                  'plane', 'mobility', 'recovery', 'rehabilitation', 'strengthening',
+                  'chair', 'floor', 'ground', 'muscle', 'muscles', 'deltoid', 'supraspinatus',
+                  'bicep', 'extremity'}
+
     tokens = text.lower().strip().split()
-    # Add simple verb/noun tags (approximate)
     tagged = []
     for t in tokens:
         clean = t.strip(".,;!?")
-        if clean:
-            tagged.append(f"{clean}/OTHER")
+        if not clean:
+            continue
+        # Priority: VIP categories first, then standard POS
+        if clean in act_words:
+            tag = "Act_VIP"
+        elif clean in body_words:
+            tag = "Body_VIP"
+        elif clean in loc_words:
+            tag = "Loc_VIP"
+        elif clean in desc_words:
+            tag = "Desc_VIP"
+        elif clean in det_words:
+            tag = "DET"
+        elif clean in pron_words:
+            tag = "PRON"
+        elif clean in aux_words:
+            tag = "AUX"
+        elif clean in adp_words:
+            tag = "ADP"
+        elif clean in verb_words:
+            tag = "VERB"
+        elif clean in adj_words:
+            tag = "ADJ"
+        elif clean in noun_words:
+            tag = "NOUN"
+        elif clean in conj_words:
+            tag = "ADP"  # conjunctions treated as ADP in HumanML3D
+        else:
+            tag = "OTHER"
+
+        tagged.append(f"{clean}/{tag}")
     return " ".join(tagged)
 
 
@@ -196,14 +291,14 @@ def generate_text_file(sample_id: str, exercise_id: str, group: str, output_dir:
             if modifier:
                 desc = f"{desc} {modifier}"
 
-        tokens = tokenize_simple(desc)
+        tokens = tokenize_with_pos(desc)
         # Format: caption#tokens#start_time#end_time
         line = f"{desc}#{tokens}#0.0#0.0"
         lines.append(line)
 
     # Add one clinical description
     clinical_desc = random.choice(ex_info["clinical"])
-    tokens = tokenize_simple(clinical_desc)
+    tokens = tokenize_with_pos(clinical_desc)
     lines.append(f"{clinical_desc}#{tokens}#0.0#0.0")
 
     # Write text file
@@ -240,11 +335,21 @@ def generate_all_texts(data_root: str):
     random.seed(42)  # Reproducibility
 
     for sample_id in all_ids:
-        # Parse exercise and group from sample_id (format: GROUP_SUBJECT_EXERCISE)
+        # Parse exercise and group from sample_id
+        # Format: GROUP_SUBJECT_EXERCISE_REPETITION (e.g., CG_S001_Es1_R001)
+        # or:     GROUP_SUBJECT_EXERCISE (e.g., CG_Subject1_Es1)
         parts = sample_id.split("_")
         if len(parts) >= 3:
             group = parts[0]
-            exercise = parts[-1]  # Last part is exercise (Es1-Es5)
+            # Find the exercise part (starts with "Es")
+            exercise = None
+            for p in parts:
+                if p.startswith("Es"):
+                    exercise = p
+                    break
+            if exercise is None:
+                print(f"  Warning: No exercise found in '{sample_id}', skipping")
+                continue
         else:
             print(f"  Warning: Cannot parse sample_id '{sample_id}', skipping")
             continue

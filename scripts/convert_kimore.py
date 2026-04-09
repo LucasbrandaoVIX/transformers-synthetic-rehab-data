@@ -4,12 +4,11 @@ Convert KIMORE dataset to HumanML3D format for MotionGPT3 fine-tuning.
 KIMORE dataset contains skeleton data from Kinect v2 (25 joints) that needs to be
 mapped to SMPL 22-joint format and converted to 263-dimensional features.
 
-KIMORE structure:
-    raw/
-        CG/ or GPx/ (subject groups)
-            Subject_ID/
-                Es1/, Es2/, Es3/, Es4/, Es5/ (exercises)
-                    JointPosition.csv  (skeleton joint positions)
+Supports two KIMORE formats:
+  1. EGCN pre-processed (.skeleton files):
+     skeleton/G{group}S{subject}E{exercise}R{repetition}.skeleton
+  2. Original KIMORE (JointPosition.csv in hierarchical dirs):
+     CG/Subject/Es1/JointPosition.csv
 
 Output format (HumanML3D compatible):
     data/rehab/
@@ -106,12 +105,54 @@ KINECT_IDX_FOR_SMPL = [
 ]
 
 
-def load_kimore_skeleton(csv_path: str) -> np.ndarray:
+def load_skeleton_file(filepath: str) -> np.ndarray:
+    """
+    Load NTU-style .skeleton file and return joint positions.
+
+    Format per frame:
+        body_count (1)
+        body_info (tracking id line)
+        n_joints (25)
+        25 lines: x y z depth_x qw qx qy qz
+
+    Returns:
+        positions: np.ndarray of shape (nframes, 25, 3)
+    """
+    with open(filepath, 'r') as f:
+        lines = f.readlines()
+
+    idx = 0
+    n_frames = int(lines[idx].strip())
+    idx += 1
+
+    all_positions = []
+
+    for _ in range(n_frames):
+        body_count = int(lines[idx].strip())
+        idx += 1
+
+        for b in range(body_count):
+            # Body info line (tracking id, etc.)
+            idx += 1
+            n_joints = int(lines[idx].strip())
+            idx += 1
+
+            joints = np.zeros((n_joints, 3))
+            for j in range(n_joints):
+                vals = lines[idx].strip().split()
+                joints[j] = [float(vals[0]), float(vals[1]), float(vals[2])]
+                idx += 1
+
+            # Only use first body
+            if b == 0:
+                all_positions.append(joints)
+
+    return np.array(all_positions)
+
+
+def load_kimore_csv(csv_path: str) -> np.ndarray:
     """
     Load KIMORE JointPosition.csv and return joint positions.
-
-    KIMORE CSV format: Each row has 75 values (25 joints * 3 coordinates).
-    Coordinates are in meters, with X, Y, Z for each joint.
 
     Returns:
         positions: np.ndarray of shape (nframes, 25, 3)
@@ -119,18 +160,15 @@ def load_kimore_skeleton(csv_path: str) -> np.ndarray:
     try:
         data = np.loadtxt(csv_path, delimiter=',')
     except ValueError:
-        # Some files may use semicolons
         data = np.loadtxt(csv_path, delimiter=';')
 
     if data.ndim == 1:
         data = data.reshape(1, -1)
 
-    # Expect 75 columns (25 joints * 3 coords) or 100 columns (25 joints * 4 with tracking state)
     n_cols = data.shape[1]
     if n_cols == 75:
         positions = data.reshape(-1, 25, 3)
     elif n_cols == 100:
-        # Has tracking state, take only x,y,z
         data_reshaped = data.reshape(-1, 25, 4)
         positions = data_reshaped[:, :, :3]
     else:
@@ -225,7 +263,7 @@ def compute_features_from_positions(positions: np.ndarray) -> np.ndarray:
 
     # Get target offsets from the first frame of this sample
     tgt_offsets = src_skel.get_offsets_joints(
-        torch.from_numpy(positions[0:1]).float()
+        torch.from_numpy(positions[0]).float()
     )
 
     # --- Uniform skeleton ---
@@ -323,7 +361,7 @@ def uniform_skeleton_22j(src_skel, positions, target_offset, kinematic_chain, fa
     l_idx1, l_idx2 = 5, 8  # r_knee, r_ankle
 
     src_skel_obj = Skeleton(torch.from_numpy(t2m_raw_offsets), kinematic_chain, 'cpu')
-    src_offset = src_skel_obj.get_offsets_joints(torch.from_numpy(positions[0:1]).float())
+    src_offset = src_skel_obj.get_offsets_joints(torch.from_numpy(positions[0]).float())
     src_offset = src_offset.numpy()
     tgt_offset = target_offset.numpy()
 
@@ -346,22 +384,79 @@ def uniform_skeleton_22j(src_skel, positions, target_offset, kinematic_chain, fa
 
 def find_kimore_files(kimore_root: str) -> list:
     """
-    Find all JointPosition.csv files in KIMORE dataset.
+    Find all KIMORE skeleton files (supports both .skeleton and .csv formats).
 
-    Returns list of tuples: (csv_path, subject_id, exercise_id, group)
+    Returns list of tuples: (file_path, sample_id, exercise_id, group, format)
+
+    EGCN .skeleton naming: G{group}S{subject}E{exercise}R{repetition}.skeleton
+    KIMORE exercise mapping: E002-E006 -> Es1-Es5 (EGCN uses different IDs)
     """
     results = []
     kimore_root = Path(kimore_root)
 
-    # KIMORE structure: Group/Subject/Exercise/JointPosition.csv
+    # Try EGCN .skeleton format first
+    skeleton_dir = kimore_root / "skeleton"
+    if not skeleton_dir.exists():
+        skeleton_dir = kimore_root  # Files might be directly in root
+
+    skeleton_files = sorted(skeleton_dir.glob("*.skeleton"))
+
+    if skeleton_files:
+        # EGCN format: G{group}S{subject}E{exercise}R{repetition}.skeleton
+        # KIMORE exercises in EGCN: E002=Es1, E003=Es2, E004=Es3, E005=Es4, E006=Es5
+        # (E007-E009 may be additional exercises or other movements)
+        EGCN_TO_EXERCISE = {
+            "E002": "Es1",  # Lateral arm elevation
+            "E003": "Es2",  # Arm flexion with elbows at hips
+            "E004": "Es3",  # Trunk rotation (seated)
+            "E005": "Es4",  # Pelvis rotation (standing)
+            "E006": "Es5",  # Squatting
+            # E007-E009: other movements, map generically
+            "E007": "Es1",
+            "E008": "Es2",
+            "E009": "Es3",
+        }
+
+        for skel_path in skeleton_files:
+            fname = skel_path.stem  # e.g., G001S001E002R001
+            try:
+                # Parse filename
+                parts = fname.split('S')
+                group_str = parts[0]  # G001
+                rest = parts[1]  # 001E002R001
+                subj_and_rest = rest.split('E')
+                subject_str = subj_and_rest[0]  # 001
+                ex_and_rep = subj_and_rest[1].split('R')
+                exercise_egcn = f"E{ex_and_rep[0]}"  # E002
+                repetition = ex_and_rep[1]  # 001
+
+                group_num = int(group_str[1:])
+                # Group mapping: G001=healthy, G002+=pathological
+                group = "CG" if group_num == 1 else f"GP{group_num - 1}"
+
+                exercise = EGCN_TO_EXERCISE.get(exercise_egcn, exercise_egcn)
+                sample_id = f"{group}_S{subject_str}_{exercise}_R{repetition}"
+
+                results.append((str(skel_path), sample_id, exercise, group, "skeleton"))
+            except (IndexError, ValueError) as e:
+                print(f"  Warning: Could not parse filename '{fname}': {e}")
+                continue
+
+        print(f"Found {len(results)} .skeleton files (EGCN format)")
+        return results
+
+    # Fallback: Original KIMORE CSV format
     for csv_path in sorted(kimore_root.rglob("JointPosition.csv")):
         parts = csv_path.relative_to(kimore_root).parts
         if len(parts) >= 3:
-            group = parts[0]       # CG, GP1, GP2, etc.
-            subject = parts[1]     # Subject ID
-            exercise = parts[2]    # Es1, Es2, etc.
+            group = parts[0]
+            subject = parts[1]
+            exercise = parts[2]
             sample_id = f"{group}_{subject}_{exercise}"
-            results.append((str(csv_path), sample_id, exercise, group))
+            results.append((str(csv_path), sample_id, exercise, group, "csv"))
+
+    if results:
+        print(f"Found {len(results)} JointPosition.csv files (original KIMORE format)")
 
     return results
 
@@ -405,10 +500,13 @@ def convert_kimore_dataset(
     successful_ids = []
     all_features = []
 
-    for csv_path, sample_id, exercise, group in tqdm(files, desc="Converting KIMORE"):
+    for file_path, sample_id, exercise, group, fmt in tqdm(files, desc="Converting KIMORE"):
         try:
             # 1. Load Kinect skeleton
-            kinect_positions = load_kimore_skeleton(csv_path)
+            if fmt == "skeleton":
+                kinect_positions = load_skeleton_file(file_path)
+            else:
+                kinect_positions = load_kimore_csv(file_path)
 
             if len(kinect_positions) < 10:
                 print(f"  Skipping {sample_id}: too short ({len(kinect_positions)} frames)")

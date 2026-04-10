@@ -1,0 +1,3 @@
+squatting exercise where the person bends knees to lower and raise the body#squatting/VERB exercise/NOUN where/OTHER the/DET person/PRON bends/VERB knees/Body_VIP to/ADP lower/Act_VIP and/ADP raise/Act_VIP the/DET body/Body_VIP#0.0#0.0
+a person performs a squat by bending the knees and lowering the body with slight compensatory movements#a/DET person/PRON performs/VERB a/DET squat/Act_VIP by/ADP bending/VERB the/DET knees/Body_VIP and/ADP lowering/VERB the/DET body/Body_VIP with/ADP slight/Desc_VIP compensatory/ADJ movements/NOUN#0.0#0.0
+knee flexion-extension exercise through squatting motion#knee/Body_VIP flexion-extension/OTHER exercise/NOUN through/ADP squatting/VERB motion/NOUN#0.0#0.0

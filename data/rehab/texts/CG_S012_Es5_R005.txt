@@ -1,0 +1,5 @@
+a standing person squats down and then returns to standing position#a/DET standing/VERB person/PRON squats/VERB down/Loc_VIP and/ADP then/ADP returns/VERB to/ADP standing/VERB position/NOUN#0.0#0.0
+a person performs slow controlled squats for leg strengthening rehabilitation#a/DET person/PRON performs/VERB slow/Desc_VIP controlled/Desc_VIP squats/VERB for/ADP leg/Body_VIP strengthening/VERB rehabilitation/ADJ#0.0#0.0
+a person performs a partial squat for lower extremity rehabilitation#a/DET person/PRON performs/VERB a/DET partial/Desc_VIP squat/Act_VIP for/ADP lower/Act_VIP extremity/NOUN rehabilitation/ADJ#0.0#0.0
+a standing person performs a rehabilitation squat with controlled movement#a/DET standing/VERB person/PRON performs/VERB a/DET rehabilitation/ADJ squat/Act_VIP with/ADP controlled/Desc_VIP movement/NOUN#0.0#0.0
+squat exercise for lower extremity strengthening and rehabilitation#squat/Act_VIP exercise/NOUN for/ADP lower/Act_VIP extremity/NOUN strengthening/VERB and/ADP rehabilitation/ADJ#0.0#0.0

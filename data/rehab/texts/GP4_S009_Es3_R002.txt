@@ -1,0 +1,3 @@
+a person performs seated torso rotations for spinal mobility with some body compensation#a/DET person/PRON performs/VERB seated/VERB torso/Body_VIP rotations/OTHER for/ADP spinal/ADJ mobility/NOUN with/ADP some/OTHER body/Body_VIP compensation/OTHER#0.0#0.0
+a person sitting on a chair performs trunk rotations side to side with slow deliberate movements#a/DET person/PRON sitting/VERB on/ADP a/DET chair/NOUN performs/VERB trunk/Body_VIP rotations/OTHER side/NOUN to/ADP side/NOUN with/ADP slow/Desc_VIP deliberate/OTHER movements/NOUN#0.0#0.0
+seated rotational exercise for low back pain rehabilitation#seated/VERB rotational/ADJ exercise/NOUN for/ADP low/OTHER back/Body_VIP pain/OTHER rehabilitation/ADJ#0.0#0.0

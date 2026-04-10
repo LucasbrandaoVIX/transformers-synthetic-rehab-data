@@ -1,0 +1,5 @@
+a person raises both arms laterally to shoulder height on the frontal plane#a/DET person/PRON raises/VERB both/DET arms/Body_VIP laterally/Loc_VIP to/ADP shoulder/Body_VIP height/NOUN on/ADP the/DET frontal/ADJ plane/NOUN#0.0#0.0
+a person elevates both arms laterally in the frontal plane as a rehabilitation exercise#a/DET person/PRON elevates/VERB both/DET arms/Body_VIP laterally/Loc_VIP in/ADP the/DET frontal/ADJ plane/NOUN as/ADP a/DET rehabilitation/ADJ exercise/NOUN#0.0#0.0
+a person lifts arms sideways up to shoulder height and then lowers them back down#a/DET person/PRON lifts/VERB arms/Body_VIP sideways/Loc_VIP up/Loc_VIP to/ADP shoulder/Body_VIP height/NOUN and/ADP then/ADP lowers/VERB them/PRON back/Body_VIP down/Loc_VIP#0.0#0.0
+a person performs lateral arm raises from the sides of the body to shoulder level#a/DET person/PRON performs/VERB lateral/ADJ arm/Body_VIP raises/VERB from/ADP the/DET sides/NOUN of/ADP the/DET body/Body_VIP to/ADP shoulder/Body_VIP level/NOUN#0.0#0.0
+shoulder abduction exercise for range of motion recovery#shoulder/Body_VIP abduction/NOUN exercise/NOUN for/ADP range/NOUN of/ADP motion/NOUN recovery/NOUN#0.0#0.0

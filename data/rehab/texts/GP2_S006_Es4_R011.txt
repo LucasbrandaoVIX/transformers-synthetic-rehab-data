@@ -1,0 +1,3 @@
+a person performs hip rotations while standing upright slowly and carefully#a/DET person/PRON performs/VERB hip/Body_VIP rotations/OTHER while/ADP standing/VERB upright/ADJ slowly/Desc_VIP and/ADP carefully/Desc_VIP#0.0#0.0
+a standing person rotates their pelvis on the transversal plane with reduced amplitude#a/DET standing/VERB person/PRON rotates/VERB their/DET pelvis/Body_VIP on/ADP the/DET transversal/ADJ plane/NOUN with/ADP reduced/Desc_VIP amplitude/NOUN#0.0#0.0
+transversal pelvic movement exercise for core stability#transversal/ADJ pelvic/OTHER movement/NOUN exercise/NOUN for/ADP core/OTHER stability/OTHER#0.0#0.0

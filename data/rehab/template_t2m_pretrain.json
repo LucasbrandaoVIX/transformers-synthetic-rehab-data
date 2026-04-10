@@ -1,0 +1,46 @@
+{
+    "Text-to-Motion": {
+        "caption": {
+            "class": "t2m",
+            "input": [
+                "Generate a rehabilitation movement that corresponds to <Caption_Placeholder>",
+                "Show me a rehabilitation exercise motion for <Caption_Placeholder>",
+                "Create a physical therapy motion that represents <Caption_Placeholder>",
+                "Demonstrate a rehabilitation exercise: <Caption_Placeholder>",
+                "Generate a motion for the following rehabilitation exercise: <Caption_Placeholder>",
+                "Show me how a patient performs <Caption_Placeholder>",
+                "Create a motion sequence for the rehabilitation exercise: <Caption_Placeholder>",
+                "Produce a rehabilitation movement that shows <Caption_Placeholder>",
+                "Generate a physiotherapy exercise motion: <Caption_Placeholder>",
+                "Demonstrate the rehabilitation movement described by: <Caption_Placeholder>",
+                "Show me a motion that captures <Caption_Placeholder>",
+                "Create a movement sequence that represents <Caption_Placeholder>",
+                "Please generate a rehabilitation exercise motion for <Caption_Placeholder>",
+                "Can you generate a rehabilitation movement for <Caption_Placeholder>?",
+                "I need a rehabilitation exercise motion for <Caption_Placeholder>. Can you generate it?",
+                "Produce a motion that shows how a patient performs <Caption_Placeholder>",
+                "Generate the motion pattern for <Caption_Placeholder>",
+                "Show the movement sequence for <Caption_Placeholder>",
+                "Create a rehabilitation motion based on: <Caption_Placeholder>",
+                "Demonstrate a motion that shows <Caption_Placeholder>"
+            ]
+        }
+    },
+    "Motion-to-Text": {
+        "caption": {
+            "class": "m2t",
+            "output": [
+                "Describe the rehabilitation exercise shown in this motion",
+                "What rehabilitation exercise is being performed in this motion?",
+                "Describe the physical therapy movement shown",
+                "What exercise is the patient performing?",
+                "Identify and describe this rehabilitation movement",
+                "Describe the physiotherapy exercise in this motion sequence",
+                "What rehabilitation movement does this motion represent?",
+                "Describe the exercise technique shown in this motion",
+                "What type of rehabilitation exercise is demonstrated here?",
+                "Provide a description of this rehabilitation movement"
+            ]
+        }
+    }
+}

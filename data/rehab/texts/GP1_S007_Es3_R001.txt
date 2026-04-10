@@ -1,0 +1,3 @@
+a person performs seated torso rotations for spinal mobility#a/DET person/PRON performs/VERB seated/VERB torso/Body_VIP rotations/OTHER for/ADP spinal/ADJ mobility/NOUN#0.0#0.0
+a seated person twists their upper body alternately to the left and right slowly and carefully#a/DET seated/VERB person/PRON twists/VERB their/DET upper/ADJ body/Body_VIP alternately/OTHER to/ADP the/DET left/Loc_VIP and/ADP right/Loc_VIP slowly/Desc_VIP and/ADP carefully/Desc_VIP#0.0#0.0
+trunk rotation exercise for spinal mobility and core rehabilitation#trunk/Body_VIP rotation/NOUN exercise/NOUN for/ADP spinal/ADJ mobility/NOUN and/ADP core/OTHER rehabilitation/ADJ#0.0#0.0

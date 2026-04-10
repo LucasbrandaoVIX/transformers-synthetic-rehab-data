@@ -1,0 +1,3 @@
+a person performs bicep curls with elbows fixed at the sides of the body with reduced amplitude#a/DET person/PRON performs/VERB bicep/NOUN curls/VERB with/ADP elbows/Body_VIP fixed/VERB at/ADP the/DET sides/NOUN of/ADP the/DET body/Body_VIP with/ADP reduced/Desc_VIP amplitude/NOUN#0.0#0.0
+elbow flexion rehabilitation exercise with elbows anchored at the hips with reduced amplitude#elbow/Body_VIP flexion/NOUN rehabilitation/ADJ exercise/NOUN with/ADP elbows/Body_VIP anchored/VERB at/ADP the/DET hips/Body_VIP with/ADP reduced/Desc_VIP amplitude/NOUN#0.0#0.0
+forearm flexion exercise for arm mobility recovery#forearm/Body_VIP flexion/NOUN exercise/NOUN for/ADP arm/Body_VIP mobility/NOUN recovery/NOUN#0.0#0.0

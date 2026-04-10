@@ -1,0 +1,3 @@
+a person slowly raises both arms sideways to shoulder height and returns to starting position#a/DET person/PRON slowly/Desc_VIP raises/VERB both/DET arms/Body_VIP sideways/Loc_VIP to/ADP shoulder/Body_VIP height/NOUN and/ADP returns/VERB to/ADP starting/OTHER position/NOUN#0.0#0.0
+a person raises both arms laterally to shoulder height on the frontal plane#a/DET person/PRON raises/VERB both/DET arms/Body_VIP laterally/Loc_VIP to/ADP shoulder/Body_VIP height/NOUN on/ADP the/DET frontal/ADJ plane/NOUN#0.0#0.0
+shoulder abduction exercise for range of motion recovery#shoulder/Body_VIP abduction/NOUN exercise/NOUN for/ADP range/NOUN of/ADP motion/NOUN recovery/NOUN#0.0#0.0

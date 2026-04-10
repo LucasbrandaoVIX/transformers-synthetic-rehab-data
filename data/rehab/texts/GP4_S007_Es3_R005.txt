@@ -1,0 +1,4 @@
+a person sitting on a chair performs trunk rotations side to side#a/DET person/PRON sitting/VERB on/ADP a/DET chair/NOUN performs/VERB trunk/Body_VIP rotations/OTHER side/NOUN to/ADP side/NOUN#0.0#0.0
+a seated person rotates their trunk to the left and right slowly and carefully#a/DET seated/VERB person/PRON rotates/VERB their/DET trunk/Body_VIP to/ADP the/DET left/Loc_VIP and/ADP right/Loc_VIP slowly/Desc_VIP and/ADP carefully/Desc_VIP#0.0#0.0
+a person performs seated torso rotations for spinal mobility with reduced amplitude#a/DET person/PRON performs/VERB seated/VERB torso/Body_VIP rotations/OTHER for/ADP spinal/ADJ mobility/NOUN with/ADP reduced/Desc_VIP amplitude/NOUN#0.0#0.0
+trunk rotation exercise for spinal mobility and core rehabilitation#trunk/Body_VIP rotation/NOUN exercise/NOUN for/ADP spinal/ADJ mobility/NOUN and/ADP core/OTHER rehabilitation/ADJ#0.0#0.0

@@ -1,0 +1,4 @@
+a person squats by flexing the knees while keeping the back straight#a/DET person/PRON squats/VERB by/ADP flexing/VERB the/DET knees/Body_VIP while/ADP keeping/VERB the/DET back/Body_VIP straight/Loc_VIP#0.0#0.0
+squatting exercise where the person bends knees to lower and raise the body#squatting/VERB exercise/NOUN where/OTHER the/DET person/PRON bends/VERB knees/Body_VIP to/ADP lower/Act_VIP and/ADP raise/Act_VIP the/DET body/Body_VIP#0.0#0.0
+a standing person performs a rehabilitation squat with controlled movement#a/DET standing/VERB person/PRON performs/VERB a/DET rehabilitation/ADJ squat/Act_VIP with/ADP controlled/Desc_VIP movement/NOUN#0.0#0.0
+functional squatting exercise for lower limb rehabilitation#functional/ADJ squatting/VERB exercise/NOUN for/ADP lower/Act_VIP limb/OTHER rehabilitation/ADJ#0.0#0.0

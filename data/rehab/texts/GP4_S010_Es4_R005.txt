@@ -1,0 +1,3 @@
+a standing person rotates their hips from side to side with limited range of motion#a/DET standing/VERB person/PRON rotates/VERB their/DET hips/Body_VIP from/ADP side/NOUN to/ADP side/NOUN with/ADP limited/Desc_VIP range/NOUN of/ADP motion/NOUN#0.0#0.0
+a standing person rotates their pelvis on the transversal plane with restricted movement range#a/DET standing/VERB person/PRON rotates/VERB their/DET pelvis/Body_VIP on/ADP the/DET transversal/ADJ plane/NOUN with/ADP restricted/OTHER movement/NOUN range/NOUN#0.0#0.0
+pelvic rotation exercise for lumbar spine rehabilitation#pelvic/OTHER rotation/NOUN exercise/NOUN for/ADP lumbar/ADJ spine/Body_VIP rehabilitation/ADJ#0.0#0.0

@@ -1,0 +1,3 @@
+a standing person rotates their hips from side to side with minor postural compensation#a/DET standing/VERB person/PRON rotates/VERB their/DET hips/Body_VIP from/ADP side/NOUN to/ADP side/NOUN with/ADP minor/Desc_VIP postural/OTHER compensation/OTHER#0.0#0.0
+a person performs hip rotations while standing upright#a/DET person/PRON performs/VERB hip/Body_VIP rotations/OTHER while/ADP standing/VERB upright/ADJ#0.0#0.0
+transversal pelvic movement exercise for core stability#transversal/ADJ pelvic/OTHER movement/NOUN exercise/NOUN for/ADP core/OTHER stability/OTHER#0.0#0.0

@@ -1,0 +1,3 @@
+a seated person performs alternating trunk rotations for core rehabilitation#a/DET seated/VERB person/PRON performs/VERB alternating/Desc_VIP trunk/Body_VIP rotations/OTHER for/ADP core/OTHER rehabilitation/ADJ#0.0#0.0
+a seated person rotates their trunk to the left and right#a/DET seated/VERB person/PRON rotates/VERB their/DET trunk/Body_VIP to/ADP the/DET left/Loc_VIP and/ADP right/Loc_VIP#0.0#0.0
+trunk rotation exercise for spinal mobility and core rehabilitation#trunk/Body_VIP rotation/NOUN exercise/NOUN for/ADP spinal/ADJ mobility/NOUN and/ADP core/OTHER rehabilitation/ADJ#0.0#0.0

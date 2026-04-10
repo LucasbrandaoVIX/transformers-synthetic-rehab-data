@@ -1,0 +1,4 @@
+a person lowers their body by bending the knees and then stands back up#a/DET person/PRON lowers/VERB their/DET body/Body_VIP by/ADP bending/VERB the/DET knees/Body_VIP and/ADP then/ADP stands/OTHER back/Body_VIP up/Loc_VIP#0.0#0.0
+a person performs a squat by bending the knees and lowering the body with slow deliberate movements#a/DET person/PRON performs/VERB a/DET squat/Act_VIP by/ADP bending/VERB the/DET knees/Body_VIP and/ADP lowering/VERB the/DET body/Body_VIP with/ADP slow/Desc_VIP deliberate/OTHER movements/NOUN#0.0#0.0
+a standing person performs a rehabilitation squat with controlled movement#a/DET standing/VERB person/PRON performs/VERB a/DET rehabilitation/ADJ squat/Act_VIP with/ADP controlled/Desc_VIP movement/NOUN#0.0#0.0
+squat exercise for lower extremity strengthening and rehabilitation#squat/Act_VIP exercise/NOUN for/ADP lower/Act_VIP extremity/NOUN strengthening/VERB and/ADP rehabilitation/ADJ#0.0#0.0

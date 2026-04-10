@@ -1,0 +1,4 @@
+a person performs seated torso rotations for spinal mobility with limited range of motion#a/DET person/PRON performs/VERB seated/VERB torso/Body_VIP rotations/OTHER for/ADP spinal/ADJ mobility/NOUN with/ADP limited/Desc_VIP range/NOUN of/ADP motion/NOUN#0.0#0.0
+a person sitting performs slow controlled rotations of the upper body with restricted movement range#a/DET person/PRON sitting/VERB performs/VERB slow/Desc_VIP controlled/Desc_VIP rotations/OTHER of/ADP the/DET upper/ADJ body/Body_VIP with/ADP restricted/OTHER movement/NOUN range/NOUN#0.0#0.0
+a seated person rotates their trunk to the left and right#a/DET seated/VERB person/PRON rotates/VERB their/DET trunk/Body_VIP to/ADP the/DET left/Loc_VIP and/ADP right/Loc_VIP#0.0#0.0
+trunk rotation exercise for spinal mobility and core rehabilitation#trunk/Body_VIP rotation/NOUN exercise/NOUN for/ADP spinal/ADJ mobility/NOUN and/ADP core/OTHER rehabilitation/ADJ#0.0#0.0

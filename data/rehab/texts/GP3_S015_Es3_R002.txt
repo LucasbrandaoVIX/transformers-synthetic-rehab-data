@@ -1,0 +1,5 @@
+seated trunk rotation exercise where the person twists the upper body left and right with limited range of motion#seated/VERB trunk/Body_VIP rotation/NOUN exercise/NOUN where/OTHER the/DET person/PRON twists/VERB the/DET upper/ADJ body/Body_VIP left/Loc_VIP and/ADP right/Loc_VIP with/ADP limited/Desc_VIP range/NOUN of/ADP motion/NOUN#0.0#0.0
+a person sitting on a chair performs trunk rotations side to side slowly and carefully#a/DET person/PRON sitting/VERB on/ADP a/DET chair/NOUN performs/VERB trunk/Body_VIP rotations/OTHER side/NOUN to/ADP side/NOUN slowly/Desc_VIP and/ADP carefully/Desc_VIP#0.0#0.0
+a seated person twists their upper body alternately to the left and right#a/DET seated/VERB person/PRON twists/VERB their/DET upper/ADJ body/Body_VIP alternately/OTHER to/ADP the/DET left/Loc_VIP and/ADP right/Loc_VIP#0.0#0.0
+a seated person rotates their trunk to the left and right#a/DET seated/VERB person/PRON rotates/VERB their/DET trunk/Body_VIP to/ADP the/DET left/Loc_VIP and/ADP right/Loc_VIP#0.0#0.0
+thoracic rotation exercise for trunk mobility recovery#thoracic/OTHER rotation/NOUN exercise/NOUN for/ADP trunk/Body_VIP mobility/NOUN recovery/NOUN#0.0#0.0

@@ -1,0 +1,4 @@
+a person lowers their body by bending the knees and then stands back up with slow deliberate movements#a/DET person/PRON lowers/VERB their/DET body/Body_VIP by/ADP bending/VERB the/DET knees/Body_VIP and/ADP then/ADP stands/OTHER back/Body_VIP up/Loc_VIP with/ADP slow/Desc_VIP deliberate/OTHER movements/NOUN#0.0#0.0
+a person bends at the knees and hips to perform a squat exercise#a/DET person/PRON bends/VERB at/ADP the/DET knees/Body_VIP and/ADP hips/Body_VIP to/ADP perform/Act_VIP a/DET squat/Act_VIP exercise/NOUN#0.0#0.0
+squatting exercise where the person bends knees to lower and raise the body#squatting/VERB exercise/NOUN where/OTHER the/DET person/PRON bends/VERB knees/Body_VIP to/ADP lower/Act_VIP and/ADP raise/Act_VIP the/DET body/Body_VIP#0.0#0.0
+knee flexion-extension exercise through squatting motion#knee/Body_VIP flexion-extension/OTHER exercise/NOUN through/ADP squatting/VERB motion/NOUN#0.0#0.0

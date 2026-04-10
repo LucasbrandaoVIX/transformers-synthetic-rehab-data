@@ -1,0 +1,3 @@
+a person performs pelvic rotations in the horizontal plane while standing#a/DET person/PRON performs/VERB pelvic/OTHER rotations/OTHER in/ADP the/DET horizontal/ADJ plane/NOUN while/ADP standing/VERB#0.0#0.0
+a standing person moves their pelvis in rotational movements#a/DET standing/VERB person/PRON moves/VERB their/DET pelvis/Body_VIP in/ADP rotational/ADJ movements/NOUN#0.0#0.0
+transversal pelvic movement exercise for core stability#transversal/ADJ pelvic/OTHER movement/NOUN exercise/NOUN for/ADP core/OTHER stability/OTHER#0.0#0.0

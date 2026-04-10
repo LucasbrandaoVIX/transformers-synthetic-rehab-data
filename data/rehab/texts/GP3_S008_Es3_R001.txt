@@ -1,0 +1,3 @@
+a seated person rotates their trunk to the left and right slowly and carefully#a/DET seated/VERB person/PRON rotates/VERB their/DET trunk/Body_VIP to/ADP the/DET left/Loc_VIP and/ADP right/Loc_VIP slowly/Desc_VIP and/ADP carefully/Desc_VIP#0.0#0.0
+a person sitting performs slow controlled rotations of the upper body with slight compensatory movements#a/DET person/PRON sitting/VERB performs/VERB slow/Desc_VIP controlled/Desc_VIP rotations/OTHER of/ADP the/DET upper/ADJ body/Body_VIP with/ADP slight/Desc_VIP compensatory/ADJ movements/NOUN#0.0#0.0
+trunk rotation exercise for spinal mobility and core rehabilitation#trunk/Body_VIP rotation/NOUN exercise/NOUN for/ADP spinal/ADJ mobility/NOUN and/ADP core/OTHER rehabilitation/ADJ#0.0#0.0

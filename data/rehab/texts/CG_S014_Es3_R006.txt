@@ -1,0 +1,4 @@
+a seated person performs alternating trunk rotations for core rehabilitation#a/DET seated/VERB person/PRON performs/VERB alternating/Desc_VIP trunk/Body_VIP rotations/OTHER for/ADP core/OTHER rehabilitation/ADJ#0.0#0.0
+a person sitting on a chair performs trunk rotations side to side#a/DET person/PRON sitting/VERB on/ADP a/DET chair/NOUN performs/VERB trunk/Body_VIP rotations/OTHER side/NOUN to/ADP side/NOUN#0.0#0.0
+a person performs seated torso rotations for spinal mobility#a/DET person/PRON performs/VERB seated/VERB torso/Body_VIP rotations/OTHER for/ADP spinal/ADJ mobility/NOUN#0.0#0.0
+seated rotational exercise for low back pain rehabilitation#seated/VERB rotational/ADJ exercise/NOUN for/ADP low/OTHER back/Body_VIP pain/OTHER rehabilitation/ADJ#0.0#0.0

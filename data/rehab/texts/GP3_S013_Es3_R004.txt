@@ -1,0 +1,4 @@
+a person sitting down rotates their trunk from side to side with restricted movement range#a/DET person/PRON sitting/VERB down/Loc_VIP rotates/VERB their/DET trunk/Body_VIP from/ADP side/NOUN to/ADP side/NOUN with/ADP restricted/OTHER movement/NOUN range/NOUN#0.0#0.0
+a seated person performs controlled rotational movements of the trunk#a/DET seated/VERB person/PRON performs/VERB controlled/Desc_VIP rotational/ADJ movements/NOUN of/ADP the/DET trunk/Body_VIP#0.0#0.0
+a person sitting on a chair performs trunk rotations side to side at a slow controlled pace#a/DET person/PRON sitting/VERB on/ADP a/DET chair/NOUN performs/VERB trunk/Body_VIP rotations/OTHER side/NOUN to/ADP side/NOUN at/ADP a/DET slow/Desc_VIP controlled/Desc_VIP pace/OTHER#0.0#0.0
+trunk rotation exercise for spinal mobility and core rehabilitation#trunk/Body_VIP rotation/NOUN exercise/NOUN for/ADP spinal/ADJ mobility/NOUN and/ADP core/OTHER rehabilitation/ADJ#0.0#0.0

@@ -1,0 +1,3 @@
+a person performs bilateral elbow flexion with arms held close to the torso#a/DET person/PRON performs/VERB bilateral/Desc_VIP elbow/Body_VIP flexion/NOUN with/ADP arms/Body_VIP held/VERB close/OTHER to/ADP the/DET torso/Body_VIP#0.0#0.0
+a standing person curls both forearms upward while elbows remain at the hips with slow deliberate movements#a/DET standing/VERB person/PRON curls/VERB both/DET forearms/Body_VIP upward/Loc_VIP while/ADP elbows/Body_VIP remain/OTHER at/ADP the/DET hips/Body_VIP with/ADP slow/Desc_VIP deliberate/OTHER movements/NOUN#0.0#0.0
+elbow flexion exercise for upper limb rehabilitation#elbow/Body_VIP flexion/NOUN exercise/NOUN for/ADP upper/ADJ limb/OTHER rehabilitation/ADJ#0.0#0.0

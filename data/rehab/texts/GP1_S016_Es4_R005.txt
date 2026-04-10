@@ -1,0 +1,4 @@
+a person performs pelvic rotations in the horizontal plane while standing at a slow controlled pace#a/DET person/PRON performs/VERB pelvic/OTHER rotations/OTHER in/ADP the/DET horizontal/ADJ plane/NOUN while/ADP standing/VERB at/ADP a/DET slow/Desc_VIP controlled/Desc_VIP pace/OTHER#0.0#0.0
+a person performs hip rotations while standing upright with limited range of motion#a/DET person/PRON performs/VERB hip/Body_VIP rotations/OTHER while/ADP standing/VERB upright/ADJ with/ADP limited/Desc_VIP range/NOUN of/ADP motion/NOUN#0.0#0.0
+a person standing performs alternating pelvic rotations to each side at a slow controlled pace#a/DET person/PRON standing/VERB performs/VERB alternating/Desc_VIP pelvic/OTHER rotations/OTHER to/ADP each/DET side/NOUN at/ADP a/DET slow/Desc_VIP controlled/Desc_VIP pace/OTHER#0.0#0.0
+transversal pelvic movement exercise for core stability#transversal/ADJ pelvic/OTHER movement/NOUN exercise/NOUN for/ADP core/OTHER stability/OTHER#0.0#0.0

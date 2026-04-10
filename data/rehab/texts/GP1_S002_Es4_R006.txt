@@ -1,0 +1,3 @@
+a person standing performs alternating pelvic rotations to each side with slow deliberate movements#a/DET person/PRON standing/VERB performs/VERB alternating/Desc_VIP pelvic/OTHER rotations/OTHER to/ADP each/DET side/NOUN with/ADP slow/Desc_VIP deliberate/OTHER movements/NOUN#0.0#0.0
+a person performs pelvic rotations in the horizontal plane while standing with slow deliberate movements#a/DET person/PRON performs/VERB pelvic/OTHER rotations/OTHER in/ADP the/DET horizontal/ADJ plane/NOUN while/ADP standing/VERB with/ADP slow/Desc_VIP deliberate/OTHER movements/NOUN#0.0#0.0
+pelvic rotation exercise for lumbar spine rehabilitation#pelvic/OTHER rotation/NOUN exercise/NOUN for/ADP lumbar/ADJ spine/Body_VIP rehabilitation/ADJ#0.0#0.0

@@ -1,0 +1,4 @@
+pelvis rotation exercise performed while standing on both feet#pelvis/Body_VIP rotation/NOUN exercise/NOUN performed/VERB while/ADP standing/VERB on/ADP both/DET feet/Body_VIP#0.0#0.0
+a standing person moves their pelvis in rotational movements#a/DET standing/VERB person/PRON moves/VERB their/DET pelvis/Body_VIP in/ADP rotational/ADJ movements/NOUN#0.0#0.0
+a person performs hip rotations while standing upright with restricted movement range#a/DET person/PRON performs/VERB hip/Body_VIP rotations/OTHER while/ADP standing/VERB upright/ADJ with/ADP restricted/OTHER movement/NOUN range/NOUN#0.0#0.0
+transversal pelvic movement exercise for core stability#transversal/ADJ pelvic/OTHER movement/NOUN exercise/NOUN for/ADP core/OTHER stability/OTHER#0.0#0.0

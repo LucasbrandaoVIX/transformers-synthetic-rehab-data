@@ -1,0 +1,3 @@
+a person performs lateral arm raises from the sides of the body to shoulder level#a/DET person/PRON performs/VERB lateral/ADJ arm/Body_VIP raises/VERB from/ADP the/DET sides/NOUN of/ADP the/DET body/Body_VIP to/ADP shoulder/Body_VIP level/NOUN#0.0#0.0
+a person stands and performs bilateral lateral arm raises for shoulder rehabilitation with slow deliberate movements#a/DET person/PRON stands/OTHER and/ADP performs/VERB bilateral/Desc_VIP lateral/ADJ arm/Body_VIP raises/VERB for/ADP shoulder/Body_VIP rehabilitation/ADJ with/ADP slow/Desc_VIP deliberate/OTHER movements/NOUN#0.0#0.0
+rehabilitation exercise targeting deltoid and supraspinatus muscles#rehabilitation/ADJ exercise/NOUN targeting/VERB deltoid/NOUN and/ADP supraspinatus/NOUN muscles/NOUN#0.0#0.0

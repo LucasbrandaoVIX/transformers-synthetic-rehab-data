@@ -1,0 +1,3 @@
+a person performs lateral arm raises from the sides of the body to shoulder level#a/DET person/PRON performs/VERB lateral/ADJ arm/Body_VIP raises/VERB from/ADP the/DET sides/NOUN of/ADP the/DET body/Body_VIP to/ADP shoulder/Body_VIP level/NOUN#0.0#0.0
+a person stands and performs bilateral lateral arm raises for shoulder rehabilitation with minor postural compensation#a/DET person/PRON stands/OTHER and/ADP performs/VERB bilateral/Desc_VIP lateral/ADJ arm/Body_VIP raises/VERB for/ADP shoulder/Body_VIP rehabilitation/ADJ with/ADP minor/Desc_VIP postural/OTHER compensation/OTHER#0.0#0.0
+lateral arm raise exercise for shoulder mobility rehabilitation#lateral/ADJ arm/Body_VIP raise/Act_VIP exercise/NOUN for/ADP shoulder/Body_VIP mobility/NOUN rehabilitation/ADJ#0.0#0.0

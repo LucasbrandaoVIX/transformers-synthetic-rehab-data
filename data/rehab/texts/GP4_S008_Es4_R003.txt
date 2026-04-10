@@ -1,0 +1,4 @@
+a person performs transversal plane pelvis rotations while standing still#a/DET person/PRON performs/VERB transversal/ADJ plane/NOUN pelvis/Body_VIP rotations/OTHER while/ADP standing/VERB still/OTHER#0.0#0.0
+a standing person performs controlled pelvic rotations for rehabilitation#a/DET standing/VERB person/PRON performs/VERB controlled/Desc_VIP pelvic/OTHER rotations/OTHER for/ADP rehabilitation/ADJ#0.0#0.0
+a person performs pelvic rotations in the horizontal plane while standing#a/DET person/PRON performs/VERB pelvic/OTHER rotations/OTHER in/ADP the/DET horizontal/ADJ plane/NOUN while/ADP standing/VERB#0.0#0.0
+pelvic rotation exercise for lumbar spine rehabilitation#pelvic/OTHER rotation/NOUN exercise/NOUN for/ADP lumbar/ADJ spine/Body_VIP rehabilitation/ADJ#0.0#0.0

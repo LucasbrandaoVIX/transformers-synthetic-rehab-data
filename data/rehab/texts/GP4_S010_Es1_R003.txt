@@ -1,0 +1,4 @@
+a person performs lateral arm raises from the sides of the body to shoulder level with some body compensation#a/DET person/PRON performs/VERB lateral/ADJ arm/Body_VIP raises/VERB from/ADP the/DET sides/NOUN of/ADP the/DET body/Body_VIP to/ADP shoulder/Body_VIP level/NOUN with/ADP some/OTHER body/Body_VIP compensation/OTHER#0.0#0.0
+a person performs shoulder abduction by raising arms laterally to the sides#a/DET person/PRON performs/VERB shoulder/Body_VIP abduction/NOUN by/ADP raising/VERB arms/Body_VIP laterally/Loc_VIP to/ADP the/DET sides/NOUN#0.0#0.0
+lateral arm elevation exercise where a person raises arms to the sides repeatedly#lateral/ADJ arm/Body_VIP elevation/NOUN exercise/NOUN where/OTHER a/DET person/PRON raises/VERB arms/Body_VIP to/ADP the/DET sides/NOUN repeatedly/OTHER#0.0#0.0
+shoulder abduction exercise for range of motion recovery#shoulder/Body_VIP abduction/NOUN exercise/NOUN for/ADP range/NOUN of/ADP motion/NOUN recovery/NOUN#0.0#0.0

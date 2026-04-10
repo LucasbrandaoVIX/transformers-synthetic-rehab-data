@@ -1,0 +1,3 @@
+a person performs a controlled squat lowering the hips toward the ground#a/DET person/PRON performs/VERB a/DET controlled/Desc_VIP squat/Act_VIP lowering/VERB the/DET hips/Body_VIP toward/ADP the/DET ground/NOUN#0.0#0.0
+a person performs a squat by bending the knees and lowering the body with slow deliberate movements#a/DET person/PRON performs/VERB a/DET squat/Act_VIP by/ADP bending/VERB the/DET knees/Body_VIP and/ADP lowering/VERB the/DET body/Body_VIP with/ADP slow/Desc_VIP deliberate/OTHER movements/NOUN#0.0#0.0
+squat exercise for lower extremity strengthening and rehabilitation#squat/Act_VIP exercise/NOUN for/ADP lower/Act_VIP extremity/NOUN strengthening/VERB and/ADP rehabilitation/ADJ#0.0#0.0

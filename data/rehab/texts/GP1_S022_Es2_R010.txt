@@ -1,0 +1,3 @@
+elbow flexion rehabilitation exercise with elbows anchored at the hips with reduced amplitude#elbow/Body_VIP flexion/NOUN rehabilitation/ADJ exercise/NOUN with/ADP elbows/Body_VIP anchored/VERB at/ADP the/DET hips/Body_VIP with/ADP reduced/Desc_VIP amplitude/NOUN#0.0#0.0
+a person performs bilateral elbow flexion with arms held close to the torso#a/DET person/PRON performs/VERB bilateral/Desc_VIP elbow/Body_VIP flexion/NOUN with/ADP arms/Body_VIP held/VERB close/OTHER to/ADP the/DET torso/Body_VIP#0.0#0.0
+bicep strengthening exercise with controlled elbow movement#bicep/NOUN strengthening/VERB exercise/NOUN with/ADP controlled/Desc_VIP elbow/Body_VIP movement/NOUN#0.0#0.0

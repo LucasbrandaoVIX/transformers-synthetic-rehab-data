@@ -1,0 +1,5 @@
+a seated person rotates their trunk to the left and right#a/DET seated/VERB person/PRON rotates/VERB their/DET trunk/Body_VIP to/ADP the/DET left/Loc_VIP and/ADP right/Loc_VIP#0.0#0.0
+a person sits and rotates their torso to each side as a rehabilitation exercise with reduced amplitude#a/DET person/PRON sits/OTHER and/ADP rotates/VERB their/DET torso/Body_VIP to/ADP each/DET side/NOUN as/ADP a/DET rehabilitation/ADJ exercise/NOUN with/ADP reduced/Desc_VIP amplitude/NOUN#0.0#0.0
+a person sitting down rotates their trunk from side to side with restricted movement range#a/DET person/PRON sitting/VERB down/Loc_VIP rotates/VERB their/DET trunk/Body_VIP from/ADP side/NOUN to/ADP side/NOUN with/ADP restricted/OTHER movement/NOUN range/NOUN#0.0#0.0
+a seated person performs alternating trunk rotations for core rehabilitation#a/DET seated/VERB person/PRON performs/VERB alternating/Desc_VIP trunk/Body_VIP rotations/OTHER for/ADP core/OTHER rehabilitation/ADJ#0.0#0.0
+thoracic rotation exercise for trunk mobility recovery#thoracic/OTHER rotation/NOUN exercise/NOUN for/ADP trunk/Body_VIP mobility/NOUN recovery/NOUN#0.0#0.0

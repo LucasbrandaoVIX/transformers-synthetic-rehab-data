@@ -1,0 +1,3 @@
+a person rotates the pelvis left and right while maintaining upright posture#a/DET person/PRON rotates/VERB the/DET pelvis/Body_VIP left/Loc_VIP and/ADP right/Loc_VIP while/ADP maintaining/VERB upright/ADJ posture/NOUN#0.0#0.0
+a person performs transversal plane pelvis rotations while standing still#a/DET person/PRON performs/VERB transversal/ADJ plane/NOUN pelvis/Body_VIP rotations/OTHER while/ADP standing/VERB still/OTHER#0.0#0.0
+pelvic rotation exercise for lumbar spine rehabilitation#pelvic/OTHER rotation/NOUN exercise/NOUN for/ADP lumbar/ADJ spine/Body_VIP rehabilitation/ADJ#0.0#0.0

@@ -1,0 +1,5 @@
+a person rotates the pelvis left and right while maintaining upright posture with restricted movement range#a/DET person/PRON rotates/VERB the/DET pelvis/Body_VIP left/Loc_VIP and/ADP right/Loc_VIP while/ADP maintaining/VERB upright/ADJ posture/NOUN with/ADP restricted/OTHER movement/NOUN range/NOUN#0.0#0.0
+a standing person rotates their pelvis on the transversal plane#a/DET standing/VERB person/PRON rotates/VERB their/DET pelvis/Body_VIP on/ADP the/DET transversal/ADJ plane/NOUN#0.0#0.0
+a person performs hip rotations while standing upright#a/DET person/PRON performs/VERB hip/Body_VIP rotations/OTHER while/ADP standing/VERB upright/ADJ#0.0#0.0
+a standing person rotates their hips from side to side slowly and carefully#a/DET standing/VERB person/PRON rotates/VERB their/DET hips/Body_VIP from/ADP side/NOUN to/ADP side/NOUN slowly/Desc_VIP and/ADP carefully/Desc_VIP#0.0#0.0
+transversal pelvic movement exercise for core stability#transversal/ADJ pelvic/OTHER movement/NOUN exercise/NOUN for/ADP core/OTHER stability/OTHER#0.0#0.0

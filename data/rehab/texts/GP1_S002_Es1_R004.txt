@@ -1,0 +1,3 @@
+a standing person raises their arms out to the sides until they are parallel to the ground#a/DET standing/VERB person/PRON raises/VERB their/DET arms/Body_VIP out/OTHER to/ADP the/DET sides/NOUN until/ADP they/PRON are/AUX parallel/OTHER to/ADP the/DET ground/NOUN#0.0#0.0
+a person raises both arms laterally to shoulder height on the frontal plane with minor postural compensation#a/DET person/PRON raises/VERB both/DET arms/Body_VIP laterally/Loc_VIP to/ADP shoulder/Body_VIP height/NOUN on/ADP the/DET frontal/ADJ plane/NOUN with/ADP minor/Desc_VIP postural/OTHER compensation/OTHER#0.0#0.0
+rehabilitation exercise targeting deltoid and supraspinatus muscles#rehabilitation/ADJ exercise/NOUN targeting/VERB deltoid/NOUN and/ADP supraspinatus/NOUN muscles/NOUN#0.0#0.0

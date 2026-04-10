@@ -1,0 +1,3 @@
+a person performs seated torso rotations for spinal mobility with minor postural compensation#a/DET person/PRON performs/VERB seated/VERB torso/Body_VIP rotations/OTHER for/ADP spinal/ADJ mobility/NOUN with/ADP minor/Desc_VIP postural/OTHER compensation/OTHER#0.0#0.0
+a seated person performs controlled rotational movements of the trunk#a/DET seated/VERB person/PRON performs/VERB controlled/Desc_VIP rotational/ADJ movements/NOUN of/ADP the/DET trunk/Body_VIP#0.0#0.0
+trunk rotation exercise for spinal mobility and core rehabilitation#trunk/Body_VIP rotation/NOUN exercise/NOUN for/ADP spinal/ADJ mobility/NOUN and/ADP core/OTHER rehabilitation/ADJ#0.0#0.0

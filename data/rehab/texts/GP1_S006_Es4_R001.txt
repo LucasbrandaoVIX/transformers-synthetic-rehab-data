@@ -1,0 +1,3 @@
+a standing person rotates their pelvis on the transversal plane#a/DET standing/VERB person/PRON rotates/VERB their/DET pelvis/Body_VIP on/ADP the/DET transversal/ADJ plane/NOUN#0.0#0.0
+a person standing performs alternating pelvic rotations to each side with some body compensation#a/DET person/PRON standing/VERB performs/VERB alternating/Desc_VIP pelvic/OTHER rotations/OTHER to/ADP each/DET side/NOUN with/ADP some/OTHER body/Body_VIP compensation/OTHER#0.0#0.0
+standing hip rotation exercise for lower back mobility#standing/VERB hip/Body_VIP rotation/NOUN exercise/NOUN for/ADP lower/Act_VIP back/Body_VIP mobility/NOUN#0.0#0.0

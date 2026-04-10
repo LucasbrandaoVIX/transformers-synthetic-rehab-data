@@ -1,0 +1,3 @@
+seated trunk rotation exercise where the person twists the upper body left and right at a slow controlled pace#seated/VERB trunk/Body_VIP rotation/NOUN exercise/NOUN where/OTHER the/DET person/PRON twists/VERB the/DET upper/ADJ body/Body_VIP left/Loc_VIP and/ADP right/Loc_VIP at/ADP a/DET slow/Desc_VIP controlled/Desc_VIP pace/OTHER#0.0#0.0
+a person sitting performs slow controlled rotations of the upper body#a/DET person/PRON sitting/VERB performs/VERB slow/Desc_VIP controlled/Desc_VIP rotations/OTHER of/ADP the/DET upper/ADJ body/Body_VIP#0.0#0.0
+seated rotational exercise for low back pain rehabilitation#seated/VERB rotational/ADJ exercise/NOUN for/ADP low/OTHER back/Body_VIP pain/OTHER rehabilitation/ADJ#0.0#0.0

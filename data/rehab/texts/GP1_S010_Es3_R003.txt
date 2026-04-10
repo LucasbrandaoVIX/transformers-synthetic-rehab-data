@@ -1,0 +1,5 @@
+a seated person twists their upper body alternately to the left and right#a/DET seated/VERB person/PRON twists/VERB their/DET upper/ADJ body/Body_VIP alternately/OTHER to/ADP the/DET left/Loc_VIP and/ADP right/Loc_VIP#0.0#0.0
+a person sitting down rotates their trunk from side to side with slow deliberate movements#a/DET person/PRON sitting/VERB down/Loc_VIP rotates/VERB their/DET trunk/Body_VIP from/ADP side/NOUN to/ADP side/NOUN with/ADP slow/Desc_VIP deliberate/OTHER movements/NOUN#0.0#0.0
+a seated person rotates their trunk to the left and right slowly and carefully#a/DET seated/VERB person/PRON rotates/VERB their/DET trunk/Body_VIP to/ADP the/DET left/Loc_VIP and/ADP right/Loc_VIP slowly/Desc_VIP and/ADP carefully/Desc_VIP#0.0#0.0
+a person performs seated torso rotations for spinal mobility slowly and carefully#a/DET person/PRON performs/VERB seated/VERB torso/Body_VIP rotations/OTHER for/ADP spinal/ADJ mobility/NOUN slowly/Desc_VIP and/ADP carefully/Desc_VIP#0.0#0.0
+seated rotational exercise for low back pain rehabilitation#seated/VERB rotational/ADJ exercise/NOUN for/ADP low/OTHER back/Body_VIP pain/OTHER rehabilitation/ADJ#0.0#0.0

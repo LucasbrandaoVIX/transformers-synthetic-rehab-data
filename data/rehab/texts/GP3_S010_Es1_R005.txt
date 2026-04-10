@@ -1,0 +1,4 @@
+a person lifts both arms away from the body in a lateral raising motion#a/DET person/PRON lifts/VERB both/DET arms/Body_VIP away/OTHER from/ADP the/DET body/Body_VIP in/ADP a/DET lateral/ADJ raising/VERB motion/NOUN#0.0#0.0
+a person stands and performs bilateral lateral arm raises for shoulder rehabilitation#a/DET person/PRON stands/OTHER and/ADP performs/VERB bilateral/Desc_VIP lateral/ADJ arm/Body_VIP raises/VERB for/ADP shoulder/Body_VIP rehabilitation/ADJ#0.0#0.0
+a person performs shoulder abduction by raising arms laterally to the sides#a/DET person/PRON performs/VERB shoulder/Body_VIP abduction/NOUN by/ADP raising/VERB arms/Body_VIP laterally/Loc_VIP to/ADP the/DET sides/NOUN#0.0#0.0
+rehabilitation exercise targeting deltoid and supraspinatus muscles#rehabilitation/ADJ exercise/NOUN targeting/VERB deltoid/NOUN and/ADP supraspinatus/NOUN muscles/NOUN#0.0#0.0

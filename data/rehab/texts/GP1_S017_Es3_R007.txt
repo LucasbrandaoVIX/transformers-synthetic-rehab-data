@@ -1,0 +1,5 @@
+a seated person twists their upper body alternately to the left and right with restricted movement range#a/DET seated/VERB person/PRON twists/VERB their/DET upper/ADJ body/Body_VIP alternately/OTHER to/ADP the/DET left/Loc_VIP and/ADP right/Loc_VIP with/ADP restricted/OTHER movement/NOUN range/NOUN#0.0#0.0
+a seated person rotates their trunk to the left and right#a/DET seated/VERB person/PRON rotates/VERB their/DET trunk/Body_VIP to/ADP the/DET left/Loc_VIP and/ADP right/Loc_VIP#0.0#0.0
+a person performs seated torso rotations for spinal mobility with reduced amplitude#a/DET person/PRON performs/VERB seated/VERB torso/Body_VIP rotations/OTHER for/ADP spinal/ADJ mobility/NOUN with/ADP reduced/Desc_VIP amplitude/NOUN#0.0#0.0
+a seated person performs controlled rotational movements of the trunk with restricted movement range#a/DET seated/VERB person/PRON performs/VERB controlled/Desc_VIP rotational/ADJ movements/NOUN of/ADP the/DET trunk/Body_VIP with/ADP restricted/OTHER movement/NOUN range/NOUN#0.0#0.0
+thoracic rotation exercise for trunk mobility recovery#thoracic/OTHER rotation/NOUN exercise/NOUN for/ADP trunk/Body_VIP mobility/NOUN recovery/NOUN#0.0#0.0

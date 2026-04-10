@@ -1,0 +1,5 @@
+elbow flexion rehabilitation exercise with elbows anchored at the hips#elbow/Body_VIP flexion/NOUN rehabilitation/ADJ exercise/NOUN with/ADP elbows/Body_VIP anchored/VERB at/ADP the/DET hips/Body_VIP#0.0#0.0
+a person performs bicep curls with elbows fixed at the sides of the body#a/DET person/PRON performs/VERB bicep/NOUN curls/VERB with/ADP elbows/Body_VIP fixed/VERB at/ADP the/DET sides/NOUN of/ADP the/DET body/Body_VIP#0.0#0.0
+a person flexes both forearms upward while keeping elbows pinned at the hips#a/DET person/PRON flexes/VERB both/DET forearms/Body_VIP upward/Loc_VIP while/ADP keeping/VERB elbows/Body_VIP pinned/VERB at/ADP the/DET hips/Body_VIP#0.0#0.0
+a person raises forearms by flexing at the elbow with upper arms held against the body#a/DET person/PRON raises/VERB forearms/Body_VIP by/ADP flexing/VERB at/ADP the/DET elbow/Body_VIP with/ADP upper/ADJ arms/Body_VIP held/VERB against/ADP the/DET body/Body_VIP#0.0#0.0
+forearm flexion exercise for arm mobility recovery#forearm/Body_VIP flexion/NOUN exercise/NOUN for/ADP arm/Body_VIP mobility/NOUN recovery/NOUN#0.0#0.0

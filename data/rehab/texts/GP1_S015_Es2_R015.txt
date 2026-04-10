@@ -1,0 +1,3 @@
+a person bends and straightens both arms at the elbows while standing upright with some body compensation#a/DET person/PRON bends/VERB and/ADP straightens/OTHER both/DET arms/Body_VIP at/ADP the/DET elbows/Body_VIP while/ADP standing/VERB upright/ADJ with/ADP some/OTHER body/Body_VIP compensation/OTHER#0.0#0.0
+a person flexes both forearms upward while keeping elbows pinned at the hips#a/DET person/PRON flexes/VERB both/DET forearms/Body_VIP upward/Loc_VIP while/ADP keeping/VERB elbows/Body_VIP pinned/VERB at/ADP the/DET hips/Body_VIP#0.0#0.0
+elbow flexion exercise for upper limb rehabilitation#elbow/Body_VIP flexion/NOUN exercise/NOUN for/ADP upper/ADJ limb/OTHER rehabilitation/ADJ#0.0#0.0

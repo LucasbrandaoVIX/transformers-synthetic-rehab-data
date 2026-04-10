@@ -1,0 +1,3 @@
+a standing person curls both forearms upward while elbows remain at the hips#a/DET standing/VERB person/PRON curls/VERB both/DET forearms/Body_VIP upward/Loc_VIP while/ADP elbows/Body_VIP remain/OTHER at/ADP the/DET hips/Body_VIP#0.0#0.0
+a person flexes both forearms upward while keeping elbows pinned at the hips#a/DET person/PRON flexes/VERB both/DET forearms/Body_VIP upward/Loc_VIP while/ADP keeping/VERB elbows/Body_VIP pinned/VERB at/ADP the/DET hips/Body_VIP#0.0#0.0
+forearm flexion exercise for arm mobility recovery#forearm/Body_VIP flexion/NOUN exercise/NOUN for/ADP arm/Body_VIP mobility/NOUN recovery/NOUN#0.0#0.0

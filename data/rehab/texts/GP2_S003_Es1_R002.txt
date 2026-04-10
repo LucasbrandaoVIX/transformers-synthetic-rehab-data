@@ -1,0 +1,3 @@
+a person raises both arms laterally to shoulder height on the frontal plane#a/DET person/PRON raises/VERB both/DET arms/Body_VIP laterally/Loc_VIP to/ADP shoulder/Body_VIP height/NOUN on/ADP the/DET frontal/ADJ plane/NOUN#0.0#0.0
+a person performs shoulder abduction by raising arms laterally to the sides#a/DET person/PRON performs/VERB shoulder/Body_VIP abduction/NOUN by/ADP raising/VERB arms/Body_VIP laterally/Loc_VIP to/ADP the/DET sides/NOUN#0.0#0.0
+rehabilitation exercise targeting deltoid and supraspinatus muscles#rehabilitation/ADJ exercise/NOUN targeting/VERB deltoid/NOUN and/ADP supraspinatus/NOUN muscles/NOUN#0.0#0.0

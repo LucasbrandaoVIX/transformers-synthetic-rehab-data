@@ -1,0 +1,3 @@
+a person lifts arms sideways up to shoulder height and then lowers them back down#a/DET person/PRON lifts/VERB arms/Body_VIP sideways/Loc_VIP up/Loc_VIP to/ADP shoulder/Body_VIP height/NOUN and/ADP then/ADP lowers/VERB them/PRON back/Body_VIP down/Loc_VIP#0.0#0.0
+a person stands and performs bilateral lateral arm raises for shoulder rehabilitation#a/DET person/PRON stands/OTHER and/ADP performs/VERB bilateral/Desc_VIP lateral/ADJ arm/Body_VIP raises/VERB for/ADP shoulder/Body_VIP rehabilitation/ADJ#0.0#0.0
+rehabilitation exercise targeting deltoid and supraspinatus muscles#rehabilitation/ADJ exercise/NOUN targeting/VERB deltoid/NOUN and/ADP supraspinatus/NOUN muscles/NOUN#0.0#0.0

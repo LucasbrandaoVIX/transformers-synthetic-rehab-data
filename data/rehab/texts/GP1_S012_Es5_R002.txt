@@ -1,0 +1,3 @@
+a person bends at the knees and hips to perform a squat exercise#a/DET person/PRON bends/VERB at/ADP the/DET knees/Body_VIP and/ADP hips/Body_VIP to/ADP perform/Act_VIP a/DET squat/Act_VIP exercise/NOUN#0.0#0.0
+a person performs a controlled squat lowering the hips toward the ground#a/DET person/PRON performs/VERB a/DET controlled/Desc_VIP squat/Act_VIP lowering/VERB the/DET hips/Body_VIP toward/ADP the/DET ground/NOUN#0.0#0.0
+functional squatting exercise for lower limb rehabilitation#functional/ADJ squatting/VERB exercise/NOUN for/ADP lower/Act_VIP limb/OTHER rehabilitation/ADJ#0.0#0.0

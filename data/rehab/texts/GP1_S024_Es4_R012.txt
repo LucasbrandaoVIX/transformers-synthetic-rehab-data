@@ -1,0 +1,4 @@
+a standing person rotates their hips from side to side#a/DET standing/VERB person/PRON rotates/VERB their/DET hips/Body_VIP from/ADP side/NOUN to/ADP side/NOUN#0.0#0.0
+a person performs hip rotations while standing upright#a/DET person/PRON performs/VERB hip/Body_VIP rotations/OTHER while/ADP standing/VERB upright/ADJ#0.0#0.0
+pelvis rotation exercise performed while standing on both feet with reduced amplitude#pelvis/Body_VIP rotation/NOUN exercise/NOUN performed/VERB while/ADP standing/VERB on/ADP both/DET feet/Body_VIP with/ADP reduced/Desc_VIP amplitude/NOUN#0.0#0.0
+standing hip rotation exercise for lower back mobility#standing/VERB hip/Body_VIP rotation/NOUN exercise/NOUN for/ADP lower/Act_VIP back/Body_VIP mobility/NOUN#0.0#0.0

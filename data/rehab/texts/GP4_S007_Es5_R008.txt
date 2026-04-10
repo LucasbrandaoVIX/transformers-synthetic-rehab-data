@@ -1,0 +1,3 @@
+a person performs a squat by bending the knees and lowering the body slowly and carefully#a/DET person/PRON performs/VERB a/DET squat/Act_VIP by/ADP bending/VERB the/DET knees/Body_VIP and/ADP lowering/VERB the/DET body/Body_VIP slowly/Desc_VIP and/ADP carefully/Desc_VIP#0.0#0.0
+a person performs a partial squat for lower extremity rehabilitation with restricted movement range#a/DET person/PRON performs/VERB a/DET partial/Desc_VIP squat/Act_VIP for/ADP lower/Act_VIP extremity/NOUN rehabilitation/ADJ with/ADP restricted/OTHER movement/NOUN range/NOUN#0.0#0.0
+squat exercise for lower extremity strengthening and rehabilitation#squat/Act_VIP exercise/NOUN for/ADP lower/Act_VIP extremity/NOUN strengthening/VERB and/ADP rehabilitation/ADJ#0.0#0.0

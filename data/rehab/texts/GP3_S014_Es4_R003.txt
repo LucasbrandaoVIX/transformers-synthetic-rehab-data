@@ -1,0 +1,4 @@
+a person rotates the pelvis left and right while maintaining upright posture with reduced amplitude#a/DET person/PRON rotates/VERB the/DET pelvis/Body_VIP left/Loc_VIP and/ADP right/Loc_VIP while/ADP maintaining/VERB upright/ADJ posture/NOUN with/ADP reduced/Desc_VIP amplitude/NOUN#0.0#0.0
+pelvis rotation exercise performed while standing on both feet#pelvis/Body_VIP rotation/NOUN exercise/NOUN performed/VERB while/ADP standing/VERB on/ADP both/DET feet/Body_VIP#0.0#0.0
+a person standing performs alternating pelvic rotations to each side#a/DET person/PRON standing/VERB performs/VERB alternating/Desc_VIP pelvic/OTHER rotations/OTHER to/ADP each/DET side/NOUN#0.0#0.0
+transversal pelvic movement exercise for core stability#transversal/ADJ pelvic/OTHER movement/NOUN exercise/NOUN for/ADP core/OTHER stability/OTHER#0.0#0.0

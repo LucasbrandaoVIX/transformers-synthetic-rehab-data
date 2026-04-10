@@ -1,0 +1,3 @@
+a person performs slow controlled squats for leg strengthening rehabilitation#a/DET person/PRON performs/VERB slow/Desc_VIP controlled/Desc_VIP squats/VERB for/ADP leg/Body_VIP strengthening/VERB rehabilitation/ADJ#0.0#0.0
+squatting exercise where the person bends knees to lower and raise the body#squatting/VERB exercise/NOUN where/OTHER the/DET person/PRON bends/VERB knees/Body_VIP to/ADP lower/Act_VIP and/ADP raise/Act_VIP the/DET body/Body_VIP#0.0#0.0
+functional squatting exercise for lower limb rehabilitation#functional/ADJ squatting/VERB exercise/NOUN for/ADP lower/Act_VIP limb/OTHER rehabilitation/ADJ#0.0#0.0

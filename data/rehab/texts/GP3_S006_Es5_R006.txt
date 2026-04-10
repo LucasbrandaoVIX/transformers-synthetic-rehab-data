@@ -1,0 +1,5 @@
+a person bends at the knees and hips to perform a squat exercise with limited range of motion#a/DET person/PRON bends/VERB at/ADP the/DET knees/Body_VIP and/ADP hips/Body_VIP to/ADP perform/Act_VIP a/DET squat/Act_VIP exercise/NOUN with/ADP limited/Desc_VIP range/NOUN of/ADP motion/NOUN#0.0#0.0
+a person lowers their body by bending the knees and then stands back up#a/DET person/PRON lowers/VERB their/DET body/Body_VIP by/ADP bending/VERB the/DET knees/Body_VIP and/ADP then/ADP stands/OTHER back/Body_VIP up/Loc_VIP#0.0#0.0
+squatting exercise where the person bends knees to lower and raise the body#squatting/VERB exercise/NOUN where/OTHER the/DET person/PRON bends/VERB knees/Body_VIP to/ADP lower/Act_VIP and/ADP raise/Act_VIP the/DET body/Body_VIP#0.0#0.0
+a standing person squats down and then returns to standing position#a/DET standing/VERB person/PRON squats/VERB down/Loc_VIP and/ADP then/ADP returns/VERB to/ADP standing/VERB position/NOUN#0.0#0.0
+functional squatting exercise for lower limb rehabilitation#functional/ADJ squatting/VERB exercise/NOUN for/ADP lower/Act_VIP limb/OTHER rehabilitation/ADJ#0.0#0.0

@@ -1,0 +1,3 @@
+a person bends and straightens both arms at the elbows while standing upright#a/DET person/PRON bends/VERB and/ADP straightens/OTHER both/DET arms/Body_VIP at/ADP the/DET elbows/Body_VIP while/ADP standing/VERB upright/ADJ#0.0#0.0
+a person performs bicep curls with elbows fixed at the sides of the body with limited range of motion#a/DET person/PRON performs/VERB bicep/NOUN curls/VERB with/ADP elbows/Body_VIP fixed/VERB at/ADP the/DET sides/NOUN of/ADP the/DET body/Body_VIP with/ADP limited/Desc_VIP range/NOUN of/ADP motion/NOUN#0.0#0.0
+forearm flexion exercise for arm mobility recovery#forearm/Body_VIP flexion/NOUN exercise/NOUN for/ADP arm/Body_VIP mobility/NOUN recovery/NOUN#0.0#0.0

@@ -1,0 +1,3 @@
+a person sitting performs slow controlled rotations of the upper body with some body compensation#a/DET person/PRON sitting/VERB performs/VERB slow/Desc_VIP controlled/Desc_VIP rotations/OTHER of/ADP the/DET upper/ADJ body/Body_VIP with/ADP some/OTHER body/Body_VIP compensation/OTHER#0.0#0.0
+a seated person rotates their trunk to the left and right with some body compensation#a/DET seated/VERB person/PRON rotates/VERB their/DET trunk/Body_VIP to/ADP the/DET left/Loc_VIP and/ADP right/Loc_VIP with/ADP some/OTHER body/Body_VIP compensation/OTHER#0.0#0.0
+seated rotational exercise for low back pain rehabilitation#seated/VERB rotational/ADJ exercise/NOUN for/ADP low/OTHER back/Body_VIP pain/OTHER rehabilitation/ADJ#0.0#0.0

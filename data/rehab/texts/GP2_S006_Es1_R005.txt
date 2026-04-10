@@ -1,0 +1,3 @@
+a person elevates both arms laterally in the frontal plane as a rehabilitation exercise#a/DET person/PRON elevates/VERB both/DET arms/Body_VIP laterally/Loc_VIP in/ADP the/DET frontal/ADJ plane/NOUN as/ADP a/DET rehabilitation/ADJ exercise/NOUN#0.0#0.0
+lateral arm elevation exercise where a person raises arms to the sides repeatedly#lateral/ADJ arm/Body_VIP elevation/NOUN exercise/NOUN where/OTHER a/DET person/PRON raises/VERB arms/Body_VIP to/ADP the/DET sides/NOUN repeatedly/OTHER#0.0#0.0
+shoulder abduction exercise for range of motion recovery#shoulder/Body_VIP abduction/NOUN exercise/NOUN for/ADP range/NOUN of/ADP motion/NOUN recovery/NOUN#0.0#0.0

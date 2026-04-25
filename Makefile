@@ -8,7 +8,7 @@ KIMORE_RAW = $(DATA_DIR)/kimore/raw
 REHAB_DIR = $(DATA_DIR)/rehab
 SYNTHETIC_DIR = $(DATA_DIR)/synthetic
 
-.PHONY: help setup convert texts finetune generate evaluate clean
+.PHONY: help setup convert texts finetune generate evaluate upload-hf clean
 
 help: ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | \
@@ -52,7 +52,13 @@ evaluate-compare: ## Evaluate and compare with real data
 	$(PYTHON) scripts/evaluate_synthetic.py \
 		--synthetic_dir $(SYNTHETIC_DIR)/motions \
 		--real_dir $(REHAB_DIR)/joints \
-		--output $(SYNTHETIC_DIR)/evaluation_comparison.json
+		--output $(SYNTHETIC_DIR)/evaluation_results.json
+
+upload-hf: ## Upload synthetic dataset to HuggingFace Hub (requires HF login)
+	$(PYTHON) scripts/upload_to_hf.py \
+		--repo_id lucasbrandao/PhysioMotion-Synthetic-Baseline \
+		--source_dir $(SYNTHETIC_DIR) \
+		--create_repo
 
 demo: ## Run MotionGPT3 web demo
 	cd $(MGPT_DIR) && $(PYTHON) app.py

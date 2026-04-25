@@ -4,6 +4,24 @@ Geração de dados sintéticos de movimento de reabilitação usando MotionGPT3.
 
 Projeto de Iniciação Científica (IC) que utiliza o framework MotionGPT3 para gerar movimentos de reabilitação realistas a partir de descrições textuais, com fine-tuning em dados do KIMORE dataset.
 
+## 📦 Dataset Disponível no HuggingFace
+
+[![HuggingFace Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Dataset-yellow)](https://huggingface.co/datasets/lucasbrandao/PhysioMotion-Synthetic-Baseline)
+
+**Baseline** (modelo pré-treinado, sem fine-tuning): 250 movimentos sintéticos cobrindo 5 exercícios do protocolo KIMORE. Licença CC-BY-NC-4.0.
+
+```python
+from huggingface_hub import hf_hub_download
+import numpy as np
+
+path = hf_hub_download(
+    repo_id="lucasbrandao/PhysioMotion-Synthetic-Baseline",
+    filename="motions/synthetic_squatting_00400.npy",
+    repo_type="dataset",
+)
+motion = np.load(path)  # shape: (1, n_frames, 22, 3)
+```
+
 ## Estrutura do Projeto
 
 ```
@@ -98,6 +116,21 @@ python scripts/evaluate_synthetic.py \
     --synthetic_dir data/synthetic/motions \
     --real_dir data/rehab/joints \
     --output evaluation_results.json
+```
+
+### 7. Publicar Dataset no HuggingFace
+
+```bash
+# Login uma vez (salva o token em ~/.cache/huggingface)
+huggingface-cli login
+
+# Upload do dataset baseline
+make upload-hf
+# ou
+python scripts/upload_to_hf.py \
+    --repo_id lucasbrandao/PhysioMotion-Synthetic-Baseline \
+    --source_dir data/synthetic \
+    --create_repo
 ```
 
 ## Exercícios KIMORE

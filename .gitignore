@@ -5,6 +5,7 @@ data/rehab/joints/
 data/rehab/tmp/
 data/rehab/*.npy
 data/synthetic/
+data/hf_staging/
 
 # MotionGPT3 large files
 MotionGPT3/checkpoints/

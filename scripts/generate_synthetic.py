@@ -119,12 +119,15 @@ def generate_with_motiongpt3(
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
 
+    # Resolve prompts_file to absolute path (we cd into MGPT_ROOT)
+    prompts_file_abs = str(Path(prompts_file).resolve())
+
     # Use MotionGPT3's demo.py for generation
     cmd = (
         f"cd {MGPT_ROOT} && "
         f"python demo.py "
         f"--cfg {config_path} "
-        f"--example {prompts_file} "
+        f"--example {prompts_file_abs} "
         f"--task {task}"
     )
 
@@ -152,47 +155,96 @@ def organize_outputs(
     """
     Organize generated motion files into a structured dataset.
 
+    MotionGPT3 demo.py writes for each prompt:
+      <idx>_out.npy        — joint positions, shape (1, nframes, 22, 3)
+      <idx>_out_feats.npy  — HumanML3D features, shape (nframes, 263)
+      <idx>_out.gif        — visualization
+
     Creates:
         final_output_dir/
-            motions/          - .npy files (nframes, 22, 3)
+            motions/          - (1, nframes, 22, 3) joint positions
+            features/         - (nframes, 263) HumanML3D features
+            visualizations/   - .gif files
             metadata.json     - Mapping of filenames to prompts and exercise types
     """
+    import re
+    import shutil
+
     mgpt_output_dir = Path(mgpt_output_dir)
     final_output_dir = Path(final_output_dir)
     motions_dir = final_output_dir / "motions"
+    features_dir = final_output_dir / "features"
+    viz_dir = final_output_dir / "visualizations"
     motions_dir.mkdir(parents=True, exist_ok=True)
+    features_dir.mkdir(parents=True, exist_ok=True)
+    viz_dir.mkdir(parents=True, exist_ok=True)
 
-    # Find generated .npy files
-    npy_files = sorted(mgpt_output_dir.glob("*.npy"))
+    # Find all *_out.npy joint files and extract numeric prompt index
+    joint_files = list(mgpt_output_dir.glob("*_out.npy"))
+    idx_re = re.compile(r"^(\d+)_out\.npy$")
 
-    if not npy_files:
-        print(f"No .npy files found in {mgpt_output_dir}")
+    indexed = []
+    for f in joint_files:
+        m = idx_re.match(f.name)
+        if m:
+            indexed.append((int(m.group(1)), f))
+
+    # Sort numerically by prompt index
+    indexed.sort(key=lambda x: x[0])
+
+    if not indexed:
+        print(f"No <idx>_out.npy files found in {mgpt_output_dir}")
         return
 
     metadata = []
     exercise_names = list(REHAB_PROMPTS.keys())
+    prompts_per_exercise = (
+        len(prompts) // len(exercise_names) if exercise_names else 1
+    )
 
-    for idx, npy_file in enumerate(npy_files):
-        motion = np.load(str(npy_file))
+    for prompt_idx, joints_path in indexed:
+        motion = np.load(str(joints_path))
 
-        # Determine exercise type from prompt index
-        prompts_per_exercise = len(prompts) // len(exercise_names) if exercise_names else 1
-        exercise_idx = min(idx // prompts_per_exercise, len(exercise_names) - 1)
-        exercise_name = exercise_names[exercise_idx] if exercise_idx < len(exercise_names) else "unknown"
+        # Determine exercise type from prompt index position
+        exercise_idx = min(prompt_idx // prompts_per_exercise, len(exercise_names) - 1)
+        exercise_name = exercise_names[exercise_idx]
 
-        # Save with structured name
-        output_name = f"synthetic_{exercise_name}_{idx:05d}.npy"
-        np.save(str(motions_dir / output_name), motion)
+        # Output filename uses the original prompt index for reproducibility
+        output_stem = f"synthetic_{exercise_name}_{prompt_idx:05d}"
+        motion_out = motions_dir / f"{output_stem}.npy"
+        np.save(str(motion_out), motion)
 
-        prompt_text = prompts[idx] if idx < len(prompts) else "unknown"
+        # Companion features file
+        feats_path = joints_path.with_name(f"{prompt_idx}_out_feats.npy")
+        feats_shape = None
+        if feats_path.exists():
+            feats = np.load(str(feats_path))
+            np.save(str(features_dir / f"{output_stem}.npy"), feats)
+            feats_shape = list(feats.shape)
 
-        metadata.append({
-            "filename": output_name,
+        # Companion gif
+        gif_path = joints_path.with_name(f"{prompt_idx}_out.gif")
+        if gif_path.exists():
+            shutil.copy2(str(gif_path), str(viz_dir / f"{output_stem}.gif"))
+
+        prompt_text = prompts[prompt_idx] if prompt_idx < len(prompts) else "unknown"
+
+        # Number of frames: if shape is (1, T, 22, 3) take T, else take 0-dim
+        if motion.ndim == 4:
+            n_frames = int(motion.shape[1])
+        else:
+            n_frames = int(motion.shape[0])
+
+        entry = {
+            "filename": f"{output_stem}.npy",
             "exercise": exercise_name,
             "prompt": prompt_text,
-            "n_frames": int(motion.shape[0]),
-            "shape": list(motion.shape),
-        })
+            "n_frames": n_frames,
+            "joints_shape": list(motion.shape),
+        }
+        if feats_shape is not None:
+            entry["feats_shape"] = feats_shape
+        metadata.append(entry)
 
     # Save metadata
     with open(str(final_output_dir / "metadata.json"), "w") as f:
@@ -275,13 +327,22 @@ def main():
         return
 
     # Step 3: Organize outputs
-    # MotionGPT3 demo.py saves results to the folder specified in config TEST.FOLDER
-    # Default is usually results/
+    # MotionGPT3 demo.py writes to:
+    #   MotionGPT3/results/motgpt/<run_name>/samples_<timestamp>/
+    # We pick the most recently modified samples_* dir under results/.
     mgpt_results = MGPT_ROOT / "results"
-    if mgpt_results.exists():
-        organize_outputs(str(mgpt_results), str(output_dir), prompts)
+    samples_dirs = sorted(
+        mgpt_results.glob("**/samples_*"),
+        key=lambda p: p.stat().st_mtime,
+        reverse=True,
+    ) if mgpt_results.exists() else []
+
+    if samples_dirs:
+        latest = samples_dirs[0]
+        print(f"\nUsing latest samples dir: {latest}")
+        organize_outputs(str(latest), str(output_dir), prompts)
     else:
-        print(f"\nNote: Could not find MotionGPT3 results folder at {mgpt_results}")
+        print(f"\nNote: Could not find any samples_* folder under {mgpt_results}")
         print("Check the config TEST.FOLDER setting for the actual output location.")
 
 

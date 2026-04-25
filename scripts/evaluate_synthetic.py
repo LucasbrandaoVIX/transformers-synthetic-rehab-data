@@ -189,6 +189,10 @@ def evaluate_motion_file(npy_path: str, fps: float = 20.0) -> dict:
     """Evaluate a single motion .npy file."""
     motion = np.load(npy_path)
 
+    # Synthetic samples come as (1, T, 22, 3) - drop the batch axis
+    if motion.ndim == 4 and motion.shape[0] == 1:
+        motion = motion[0]
+
     # Handle different shapes
     if motion.ndim == 2 and motion.shape[1] == 263:
         # This is a feature vector, not raw joints - skip biomechanical eval
@@ -294,8 +298,11 @@ def evaluate_dataset(motion_dir: str, fps: float = 20.0) -> dict:
     }
 
 
-def compare_distributions(synthetic_dir: str, real_dir: str, fps: float = 20.0):
-    """Compare velocity and angle distributions between synthetic and real data."""
+def compare_distributions(synthetic_dir: str, real_dir: str, fps: float = 20.0) -> dict:
+    """Compare velocity and angle distributions between synthetic and real data.
+
+    Returns a dict with stats so it can be merged into the output JSON.
+    """
     print("\n--- Distribution Comparison ---")
 
     syn_files = sorted(Path(synthetic_dir).glob("*.npy"))
@@ -305,6 +312,9 @@ def compare_distributions(synthetic_dir: str, real_dir: str, fps: float = 20.0):
         all_vels = []
         for f in files:
             motion = np.load(str(f))
+            # Accept (nframes, 22, 3) or (1, nframes, 22, 3)
+            if motion.ndim == 4 and motion.shape[0] == 1 and motion.shape[2] == 22:
+                motion = motion[0]
             if motion.ndim == 3 and motion.shape[1] == 22:
                 vel = np.diff(motion, axis=0) * fps
                 vel_mag = np.linalg.norm(vel, axis=-1).mean(axis=1)
@@ -314,24 +324,37 @@ def compare_distributions(synthetic_dir: str, real_dir: str, fps: float = 20.0):
     syn_vels = collect_velocities(syn_files)
     real_vels = collect_velocities(real_files)
 
+    out = {
+        "synthetic_files": len(syn_files),
+        "real_files": len(real_files),
+    }
+
     if len(syn_vels) > 0 and len(real_vels) > 0:
         print(f"  Synthetic velocities: mean={syn_vels.mean():.4f}, std={syn_vels.std():.4f}")
         print(f"  Real velocities:      mean={real_vels.mean():.4f}, std={real_vels.std():.4f}")
 
-        # KL divergence approximation via histogram
         bins = np.linspace(0, max(syn_vels.max(), real_vels.max()), 50)
         syn_hist, _ = np.histogram(syn_vels, bins=bins, density=True)
         real_hist, _ = np.histogram(real_vels, bins=bins, density=True)
 
-        # Add small epsilon to avoid log(0)
         eps = 1e-10
         syn_hist = syn_hist + eps
         real_hist = real_hist + eps
 
-        kl_div = np.sum(real_hist * np.log(real_hist / syn_hist)) * (bins[1] - bins[0])
+        kl_div = float(np.sum(real_hist * np.log(real_hist / syn_hist)) * (bins[1] - bins[0]))
         print(f"  KL divergence (real||synthetic): {kl_div:.4f}")
+
+        out.update({
+            "synthetic_velocity_mean": float(syn_vels.mean()),
+            "synthetic_velocity_std": float(syn_vels.std()),
+            "real_velocity_mean": float(real_vels.mean()),
+            "real_velocity_std": float(real_vels.std()),
+            "kl_divergence_velocity": kl_div,
+        })
     else:
         print("  Insufficient data for comparison")
+
+    return out
 
 
 def main():
@@ -378,7 +401,8 @@ def main():
 
     # Compare with real data if provided
     if args.real_dir:
-        compare_distributions(args.synthetic_dir, args.real_dir, args.fps)
+        comparison = compare_distributions(args.synthetic_dir, args.real_dir, args.fps)
+        results["comparison_vs_real"] = comparison
 
     # Save results
     if args.output:
